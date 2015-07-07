@@ -107,7 +107,8 @@ IF j = 1 THEN
   ' ???
 ELSE
   j = 42
-  LOCATE uad, place: PRINT " "
+  ' FIXME
+  'LOCATE uad, place: PRINT " "
   IF code = 2 THEN
     code = 32
   IF place = 80 THEN
@@ -120,7 +121,8 @@ END IF
 IF place = 1 THEN
 code = 1
 END IF
-LOCATE uad, place: PRINT CHR$(157)
+' FIXME
+'LOCATE uad, place: PRINT CHR$(157)
 42
 
 IF x = uad2 AND y = place2 THEN
@@ -131,7 +133,8 @@ IF j2 = 500 THEN
 j2 = 1
 END IF
 IF j2 = 1 THEN ELSE 44
-LOCATE uad2, place2: PRINT " "
+' FIXME
+'LOCATE uad2, place2: PRINT " "
 IF code2 = 2 THEN 33
 IF place2 = 80 THEN
 33 place2 = place2 - 1
@@ -143,7 +146,8 @@ END IF
 IF place2 = 1 THEN
 code2 = 1
 END IF
-LOCATE uad2, place2: PRINT CHR$(157)
+' FIXME
+'LOCATE uad2, place2: PRINT CHR$(157)
 44
 
 IF x = uad3 AND y = place3 THEN
@@ -154,7 +158,8 @@ IF j3 = 500 THEN
 j3 = 1
 END IF
 IF j3 = 1 THEN ELSE 444
-LOCATE uad3, place3: PRINT " "
+' FIXME
+'LOCATE uad3, place3: PRINT " "
 IF code3 = 2 THEN 333
 IF place3 = 80 THEN
 333 place3 = place3 - 1
