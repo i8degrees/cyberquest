@@ -64,22 +64,22 @@ SLEEP 500
 CLS
 GOTO finallevel
 
-finallevel:
-x = 27
-y = 40
-uad = 17
-place = 17
-j = j + 1
-uad2 = 13
-place2 = 15
-j2 = j2 + 1
-place3 = 20
-uad3 = 22
-j3 = j3 + 1
-place4 = 7
-uad4 = 7
-j4 = j4 + 1
-door$ = CHR$(8)
+finallevel
+  x = 27
+  y = 40
+  uad = 17
+  place = 17
+  j = j + 1
+  uad2 = 13
+  place2 = 15
+  j2 = j2 + 1
+  place3 = 20
+  uad3 = 22
+  j3 = j3 + 1
+  place4 = 7
+  uad4 = 7
+  j4 = j4 + 1
+  door$ = CHR$(8)
 
 SCREEN 12
 
