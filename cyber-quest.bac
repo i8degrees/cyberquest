@@ -10,8 +10,8 @@
 '					Press F5 to begin the game!
 '
 '**********************************************************************
-'DECLARE SUB intro ()
-'DECLARE SUB menu ()
+DECLARE SUB intro ()
+DECLARE SUB menu ()
 'DECLARE SUB playgame ()
 'DECLARE SUB instructions ()
 'DECLARE SUB goodbye ()
