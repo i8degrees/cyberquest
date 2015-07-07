@@ -26,31 +26,31 @@ DECLARE SUB menu ()
 PROTO CLS CLEAR
 
 SUB About
-'Shows information about program
+  'Shows information about program
 
-CLS
-COLOR FG TO 2
-' <center>
-PRINT "*About Cyber Quest*"
-PRINT
-PRINT "Cyber Quest (c) 1997"
-PRINT
-COLOR FG TO 11: PRINT "Created By: Lightning Games, inc."
-PRINT "Art Director: Jeff Carpenter"
-PRINT "Character Movement: Jeff Carpenter"
-PRINT "Music: Jeff Carpenter"
-PRINT "Sound Effects: Jeff Carpenter"
-PRINT "Special Thanks To: David Hartfield"
-PRINT
-COLOR FG TO 20: PRINT "E-Mail @ jeffac3000@aol.com"
-PRINT ""
-COLOR FG TO 15: PRINT "Press any key to continue..."
-'</center>
+  CLS
+  COLOR FG TO 2
+  ' <center>
+  PRINT "*About Cyber Quest*"
+  PRINT
+  PRINT "Cyber Quest (c) 1997"
+  PRINT
+  COLOR FG TO 11: PRINT "Created By: Lightning Games, inc."
+  PRINT "Art Director: Jeff Carpenter"
+  PRINT "Character Movement: Jeff Carpenter"
+  PRINT "Music: Jeff Carpenter"
+  PRINT "Sound Effects: Jeff Carpenter"
+  PRINT "Special Thanks To: David Hartfield"
+  PRINT
+  COLOR FG TO 20: PRINT "E-Mail @ jeffac3000@aol.com"
+  PRINT ""
+  COLOR FG TO 15: PRINT "Press any key to continue..."
+  '</center>
 
-WHILE INKEY$ = "" DO
-WEND
+  WHILE INKEY$ = "" DO
+  WEND
 
-menu
+  CALL menu
 END SUB
 
 SUB boss
