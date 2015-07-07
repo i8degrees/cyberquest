@@ -29,7 +29,7 @@ SUB About
 'Shows information about program
 
 CLS
-COLOR 2
+COLOR FG TO 2
 ' <center>
 PRINT "*About Cyber Quest*"
 PRINT
