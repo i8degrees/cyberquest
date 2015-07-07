@@ -64,7 +64,7 @@ SLEEP 500
 CLS
 GOTO finallevel
 
-finallevel
+LABEL finallevel
   x = 27
   y = 40
   uad = 17
