@@ -23,9 +23,6 @@
 'DECLARE SUB ending ()
 'DECLARE SUB differboss ()
 
-'intro
-menu
-
 SUB About
 'Shows information about program
 
@@ -1022,3 +1019,6 @@ CLS
 menu
 ' Gambas fix: GOTO MENU
 END SUB
+
+'intro
+menu
