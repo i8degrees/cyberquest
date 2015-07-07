@@ -47,8 +47,8 @@ PRINT ""
 COLOR FG TO 15: PRINT "Press any key to continue..."
 '</center>
 
-DO
-LOOP WHILE INKEY$ = ""
+WHILE INKEY$ = "" DO
+WEND
 
 menu
 END SUB
