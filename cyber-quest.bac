@@ -35,16 +35,16 @@ PRINT "*About Cyber Quest*"
 PRINT
 PRINT "Cyber Quest (c) 1997"
 PRINT
-COLOR 11: PRINT "Created By: Lightning Games, inc."
+COLOR FG TO 11: PRINT "Created By: Lightning Games, inc."
 PRINT "Art Director: Jeff Carpenter"
 PRINT "Character Movement: Jeff Carpenter"
 PRINT "Music: Jeff Carpenter"
 PRINT "Sound Effects: Jeff Carpenter"
 PRINT "Special Thanks To: David Hartfield"
 PRINT
-COLOR 20: PRINT "E-Mail @ jeffac3000@aol.com"
+COLOR FG TO 20: PRINT "E-Mail @ jeffac3000@aol.com"
 PRINT ""
-COLOR 15: PRINT "Press any key to continue..."
+COLOR FG TO 15: PRINT "Press any key to continue..."
 '</center>
 
 DO
@@ -183,7 +183,7 @@ LOCATE uad4, place4: PRINT CHR$(157)
 4444
 
 LINE (0, 0)-(639, 465), 2, B 'Draws a box for boundary lines
-COLOR 14: LOCATE 2, 40: PRINT door$
+COLOR FG TO 14: LOCATE 2, 40: PRINT door$
 IF x = 2 AND y = 40 THEN
 ' Gambas fix: PLAY "abcdef"
 ending
@@ -284,20 +284,20 @@ SUB goodbye
 SCREEN 0 'Text mode
 CLS
 PRINT ""
-COLOR 20, 0: LOCATE 8, 31: PRINT "Thank you for playing Cyber Quest!"
-COLOR 2, 0: LOCATE 20, 1: PRINT "Cyber Quest (c) 1997 Lightning Games, Inc."
+COLOR FG TO 20, 0: LOCATE 8, 31: PRINT "Thank you for playing Cyber Quest!"
+COLOR FG TO 2, 0: LOCATE 20, 1: PRINT "Cyber Quest (c) 1997 Lightning Games, Inc."
 SLEEP
 SYSTEM
 END SUB
 
 SUB Instructions
 CLS
-COLOR 2: LOCATE 2, 1: PRINT "Instructions: "
+COLOR FG TO 2: LOCATE 2, 1: PRINT "Instructions: "
 PRINT ""
-COLOR 14, 0: PRINT "The object of the game is to beat each level by obtaining"
-COLOR 14, 0: PRINT "each key, unlocking the door to the next level. You will be"
-COLOR 14, 0: PRINT "faced with a Boss at the end of the game. You are"; CHR$(1);
-COLOR 14, 0: PRINT "and control him by using the arrow keys."
+COLOR FG TO 14, 0: PRINT "The object of the game is to beat each level by obtaining"
+COLOR FG TO 14, 0: PRINT "each key, unlocking the door to the next level. You will be"
+COLOR FG TO 14, 0: PRINT "faced with a Boss at the end of the game. You are"; CHR$(1);
+COLOR FG TO 14, 0: PRINT "and control him by using the arrow keys."
 PRINT ""
 COLOR 20: PRINT "Note:"
 COLOR 2, 0: PRINT "Each level holds a secret -- look at everything!"
