@@ -85,10 +85,15 @@ LABEL finallevel
 
 LABEL mainboss
 
-DO
-IF x = uad AND y = place THEN
-END
-END IF
+battle = TRUE
+
+WHILE battle = FALSE DO
+
+  IF x = uad AND y = place THEN
+    battle = true
+    BREAK
+  END IF
+WEND
 
 IF press$ = CHR$(32) THEN
 ending
