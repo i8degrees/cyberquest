@@ -131,12 +131,17 @@ IF x = uad2 AND y = place2 THEN
 END IF
 
 IF j2 = 500 THEN
-j2 = 1
+  j2 = 1
 END IF
-IF j2 = 1 THEN ELSE 44
-' FIXME
-'LOCATE uad2, place2: PRINT " "
-IF code2 = 2 THEN 33
+
+IF j2 = 1 THEN
+  ' ...
+ELSE
+  j2 = 44
+  ' FIXME
+  'LOCATE uad2, place2: PRINT " "
+IF code2 = 2 THEN
+code2 = 33
 IF place2 = 80 THEN
 33 place2 = place2 - 1
 code2 = 2
