@@ -10,18 +10,18 @@
 '					Press F5 to begin the game!
 '
 '**********************************************************************
-DECLARE SUB intro ()
+'DECLARE SUB intro ()
 'DECLARE SUB menu ()
-DECLARE SUB playgame ()
-DECLARE SUB instructions ()
-DECLARE SUB goodbye ()
-DECLARE SUB About ()
-DECLARE SUB level1 ()
-DECLARE SUB level2 ()
-DECLARE SUB level3 ()
-DECLARE SUB boss ()
-DECLARE SUB ending ()
-DECLARE SUB differboss ()
+'DECLARE SUB playgame ()
+'DECLARE SUB instructions ()
+'DECLARE SUB goodbye ()
+'DECLARE SUB About ()
+'DECLARE SUB level1 ()
+'DECLARE SUB level2 ()
+'DECLARE SUB level3 ()
+'DECLARE SUB boss ()
+'DECLARE SUB ending ()
+'DECLARE SUB differboss ()
 
 'intro
 menu
