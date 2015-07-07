@@ -81,7 +81,7 @@ LABEL finallevel
   j4 = j4 + 1
   door$ = CHR$(8)
 
-SCREEN 12
+'SCREEN 12
 
 mainboss:
 
@@ -371,7 +371,7 @@ END SUB
 
 SUB level1
 CLS
-SCREEN 12 'Mode 12 (15 colors)
+'SCREEN 12 'Mode 12 (15 colors)
 x = 2
 gotkey$ = "no"
 y = 2
@@ -505,7 +505,7 @@ END SUB
 
 SUB level2
 CLS
-SCREEN 12
+''SCREEN 12
 x = 2
 y = 2
 gotkey$ = "no"
@@ -649,7 +649,7 @@ BAD1KILL$ = "n"
 gotkey$ = "no"
 bombposition$ = "n"
 bombthere$ = "n"
-SCREEN 12
+'SCREEN 12
 'LOCATE 2, 5
 'PRINTCHR$(2)
 BAD1 = 7
