@@ -182,7 +182,7 @@ END IF
 IF place3 = 1 THEN
 code3 = 1
 END IF
-LOCATE uad3, place3: PRINT CHR$(157)
+'LOCATE uad3, place3: PRINT CHR$(157)
 444
 
 IF x = uad4 AND y = place4 THEN
@@ -193,7 +193,7 @@ IF j4 = 500 THEN
 j4 = 1
 END IF
 IF j4 = 1 THEN ELSE 4444
-LOCATE uad4, place4: PRINT " "
+'LOCATE uad4, place4: PRINT " "
 IF code4 = 2 THEN 3333
 IF place4 = 80 THEN
 3333 place4 = place4 - 1
@@ -205,11 +205,12 @@ END IF
 IF place4 = 1 THEN
 code4 = 1
 END IF
-LOCATE uad4, place4: PRINT CHR$(157)
+'LOCATE uad4, place4: PRINT CHR$(157)
 4444
 
 LINE (0, 0)-(639, 465), 2, B 'Draws a box for boundary lines
-COLOR FG TO 14: LOCATE 2, 40: PRINT door$
+COLOR FG TO 14: PRINT "FIXME"
+'LOCATE 2, 40: PRINT door$
 IF x = 2 AND y = 40 THEN
 ' Gambas fix: PLAY "abcdef"
 CALL ending
@@ -217,10 +218,10 @@ END IF
 
 press$ = INKEY$
 
-LOCATE x, y: PRINT CHR$(1)
+'LOCATE x, y: PRINT CHR$(1)
 
 IF press$ = CHR$(0) + CHR$(72) THEN
-LOCATE
+'LOCATE
 LOCATE x, y: PRINT " "
 x = x - 1
 GOTO mainboss
