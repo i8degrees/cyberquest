@@ -11,7 +11,7 @@
 '
 '**********************************************************************
 DECLARE SUB intro ()
-DECLARE SUB menu ()
+'DECLARE SUB menu ()
 DECLARE SUB playgame ()
 DECLARE SUB instructions ()
 DECLARE SUB goodbye ()
@@ -991,7 +991,7 @@ boss
 
 END SUB
 
-SUB menu
+SUB menu()
 SCREEN 0, 0 'Text mode
 CLS
 ' Gambas fix: menu:
