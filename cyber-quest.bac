@@ -23,6 +23,8 @@
 'DECLARE SUB ending ()
 'DECLARE SUB differboss ()
 
+PROTO CLS CLEAR
+
 SUB About
 'Shows information about program
 
