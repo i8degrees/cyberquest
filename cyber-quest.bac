@@ -96,7 +96,7 @@ WHILE battle = FALSE DO
 WEND
 
 IF press$ = CHR$(32) THEN
-  ending
+  CALL ending
 END IF
 
 IF j = 500 THEN
@@ -191,7 +191,7 @@ LINE (0, 0)-(639, 465), 2, B 'Draws a box for boundary lines
 COLOR FG TO 14: LOCATE 2, 40: PRINT door$
 IF x = 2 AND y = 40 THEN
 ' Gambas fix: PLAY "abcdef"
-ending
+CALL ending
 END IF
 
 press$ = INKEY$
