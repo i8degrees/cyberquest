@@ -991,35 +991,35 @@ boss
 END SUB
 
 SUB menu()
-SCREEN 0, 0 'Text mode
-CLS
-' Gambas fix: menu:
-' Gambas fix: SCREEN 0, 0
-COLOR 2
-COLOR 20: LOCATE 1, 25: PRINT " -Menu- " 'Flashing in RED
-COLOR 2: LOCATE 2, 20: PRINT "(1) Play Cyber Quest"
-COLOR 2: LOCATE 3, 20: PRINT "(2) Instructions"
-COLOR 2: LOCATE 4, 20: PRINT "(3) About Cyber Quest"
-COLOR 2: LOCATE 5, 20: PRINT "(4) Quit"
-COLOR 2: LOCATE 6, 15: INPUT "Well? ", stuff$
-IF stuff$ = "1" THEN
-CALL level1
-END IF
-IF stuff$ = "2" THEN
-CALL instructions
-END IF
-IF stuff$ = "3" THEN
-CALL About
-END IF
-IF stuff$ = "4" THEN
-CALL goodbye
-END IF
+  SCREEN 0, 0 'Text mode
+  CLS
+  ' Gambas fix: menu:
+  ' Gambas fix: SCREEN 0, 0
+  COLOR 2
+  COLOR 20: LOCATE 1, 25: PRINT " -Menu- " 'Flashing in RED
+  COLOR 2: LOCATE 2, 20: PRINT "(1) Play Cyber Quest"
+  COLOR 2: LOCATE 3, 20: PRINT "(2) Instructions"
+  COLOR 2: LOCATE 4, 20: PRINT "(3) About Cyber Quest"
+  COLOR 2: LOCATE 5, 20: PRINT "(4) Quit"
+  COLOR 2: LOCATE 6, 15: INPUT "Well? ", stuff$
+  IF stuff$ = "1" THEN
+    CALL level1
+  END IF
+  IF stuff$ = "2" THEN
+    CALL instructions
+  END IF
+  IF stuff$ = "3" THEN
+    CALL About
+  END IF
+  IF stuff$ = "4" THEN
+    CALL goodbye
+  END IF
 
-'ELSE...
-CLS
-' Gambas fix: SOUND 45, 1
-menu
-' Gambas fix: GOTO MENU
+  'ELSE...
+  CLS
+  ' Gambas fix: SOUND 45, 1
+  'menu
+  ' Gambas fix: GOTO MENU
 END SUB
 
 'intro
