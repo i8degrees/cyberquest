@@ -211,7 +211,7 @@ IF place4 = 1 THEN
   code4 = 1
 END IF
 'LOCATE uad4, place4: PRINT CHR$(157)
-4444
+code4 = 4444
 
 LINE (0, 0)-(639, 465), 2, B 'Draws a box for boundary lines
 COLOR FG TO 14: PRINT "FIXME"
