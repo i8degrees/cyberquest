@@ -182,28 +182,33 @@ END IF
 IF place3 = 1 THEN
 code3 = 1
 END IF
+
 'LOCATE uad3, place3: PRINT CHR$(157)
-444
+code3 = 444
 
 IF x = uad4 AND y = place4 THEN
-END
+  END
 END IF
 
 IF j4 = 500 THEN
 j4 = 1
 END IF
-IF j4 = 1 THEN ELSE 4444
-'LOCATE uad4, place4: PRINT " "
-IF code4 = 2 THEN 3333
-IF place4 = 80 THEN
-3333 place4 = place4 - 1
-code4 = 2
+IF j4 = 1 THEN
+  ' ...
 ELSE
-place4 = place4 + 1
+  j4 = 4444
+'LOCATE uad4, place4: PRINT " "
+IF code4 = 2 THEN
+  code4 = 3333
+IF place4 = 80 THEN
+  3333 place4 = place4 - 1
+  code4 = 2
+ELSE
+  place4 = place4 + 1
 END IF
 
 IF place4 = 1 THEN
-code4 = 1
+  code4 = 1
 END IF
 'LOCATE uad4, place4: PRINT CHR$(157)
 4444
@@ -812,18 +817,24 @@ SUB level3
   IF x = 5 AND y = 5 THEN
   x = x + 3
   END IF
-  IF BAD1KILL$ = "N" THEN 106 ELSE
-  LOCATE 2, BAD1: PRINT " " 'moves enemy
-  d = d + 1
-  IF d = 5 THEN ELSE 4
+  IF BAD1KILL$ = "N" THEN
+    x = 106
+  ELSE
+    LOCATE 2, BAD1: PRINT " " 'moves enemy
+    d = d + 1
+  IF d = 5 THEN
+    ' ...
+  ELSE
+    d = 4
   IF BAD1 = 10 THEN
-  code$ = "no"
+    code$ = "no"
   END IF
-  IF code$ = "yes" THEN 3
+  IF code$ = "yes" THEN
+    code$ = 3
   'END IF
   IF BAD1 = 70 THEN
-  3 BAD1 = BAD1 - 1
-  code$ = "yes"
+    3 BAD1 = BAD1 - 1
+    code$ = "yes"
   GOTO 2
   ELSE
   BAD1 = BAD1 + 1
@@ -914,9 +925,12 @@ SUB level3
   x = x + 1
   LOCATE ap, bp: PRINT " "
   'END IF
-  IF x = 14 AND y > 25 AND BAD1KILL$ = "n" THEN ELSE 110
-  x = x - 1
-  ap = ap + 1
+  IF x = 14 AND y > 25 AND BAD1KILL$ = "n" THEN
+    ' ...
+  ELSE
+    x = 110
+    x = x - 1
+    ap = ap + 1
   ' QB64 fix: CLEAR 0, 0, 10000
   ' Gambas fix: CLEAR , , 10000
   110
