@@ -20,7 +20,7 @@ DECLARE SUB menu ()
 'DECLARE SUB level2 ()
 'DECLARE SUB level3 ()
 'DECLARE SUB boss ()
-'DECLARE SUB ending ()
+DECLARE SUB ending ()
 'DECLARE SUB differboss ()
 
 PROTO CLS CLEAR
@@ -96,7 +96,7 @@ WHILE battle = FALSE DO
 WEND
 
 IF press$ = CHR$(32) THEN
-ending
+  ending
 END IF
 
 IF j = 500 THEN
