@@ -100,16 +100,21 @@ IF press$ = CHR$(32) THEN
 END IF
 
 IF j = 500 THEN
-j = 1
+  j = 1
 END IF
-IF j = 1 THEN ELSE 42
-LOCATE uad, place: PRINT " "
-IF code = 2 THEN 32
-IF place = 80 THEN
-32 place = place - 1
-code = 2
+
+IF j = 1 THEN
+  ' ???
 ELSE
-place = place + 1
+  j = 42
+  LOCATE uad, place: PRINT " "
+  IF code = 2 THEN
+    code = 32
+  IF place = 80 THEN
+    32 place = place - 1
+    code = 2
+  ELSE
+    place = place + 1
 END IF
 
 IF place = 1 THEN
