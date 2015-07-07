@@ -119,14 +119,15 @@ ELSE
 END IF
 
 IF place = 1 THEN
-code = 1
+  code = 1
 END IF
+
 ' FIXME
 'LOCATE uad, place: PRINT CHR$(157)
-42
+code = 42
 
 IF x = uad2 AND y = place2 THEN
-END
+  END
 END IF
 
 IF j2 = 500 THEN
