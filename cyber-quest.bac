@@ -154,24 +154,29 @@ code2 = 1
 END IF
 ' FIXME
 'LOCATE uad2, place2: PRINT CHR$(157)
-44
+  code2 = 44
 
 IF x = uad3 AND y = place3 THEN
 END
 END IF
 
 IF j3 = 500 THEN
-j3 = 1
+  j3 = 1
 END IF
-IF j3 = 1 THEN ELSE 444
-' FIXME
-'LOCATE uad3, place3: PRINT " "
-IF code3 = 2 THEN 333
-IF place3 = 80 THEN
-333 place3 = place3 - 1
-code3 = 2
+
+IF j3 = 1 THEN
+  ' ...
 ELSE
-place3 = place3 + 1
+  j3 = 444
+  ' FIXME
+  'LOCATE uad3, place3: PRINT " "
+  IF code3 = 2 THEN
+    code3 = 333
+  IF place3 = 80 THEN
+    333 place3 = place3 - 1
+    code3 = 2
+  ELSE
+    place3 = place3 + 1
 END IF
 
 IF place3 = 1 THEN
